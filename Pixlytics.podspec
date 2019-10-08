@@ -28,7 +28,7 @@ Pod::Spec.new do |s|
   s.social_media_url = 'https://twitter.com/wassabemobile'
 
   s.platform         = :ios
-  s.swift_version = '5.1'
+  s.swift_version = ['5.1']
   
   s.ios.deployment_target   = '10.0'
   s.ios.vendored_frameworks = 'Pixlytics_SDK.framework'

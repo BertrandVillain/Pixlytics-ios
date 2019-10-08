@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'Pixlytics'
-  s.version          = '1.0.0'
+  s.version          = '1.0.3'
   s.summary          = 'Pixlytics is a SDK allowing mobile apps to do recognition of items in picture, offline and online.'
 
   s.description      = <<-DESC
@@ -23,18 +23,18 @@ Pod::Spec.new do |s|
   s.homepage         = 'https://github.com/wassafr/Pixlytics-ios'
   s.license          = { :type => 'COMMERCIAL', :file => __dir__ + '/LICENSE.md' }
   s.author           = { 'Wassa' => 'bertrand.villain@wassa.io' }
-  s.source           = { :http => 'https://github.com/wassafr/Pixlytics-ios/raw/master/Pixlytics_SDK.zip'}
-  #s.source           = { :http => 'file:' + __dir__ + '/Pixlytics_SDK.zip' }
+  #s.source           = { :http => 'https://github.com/wassafr/Pixlytics-ios/raw/master/Pixlytics_SDK.zip'}
+  s.source           = { :http => 'file:' + __dir__ + '/Pixlytics_SDK.zip' }
   s.social_media_url = 'https://twitter.com/wassabemobile'
 
   s.platform         = :ios
-  #s.swift_version = '4.2'
+  s.swift_version = '5.1'
   
   s.ios.deployment_target   = '10.0'
   s.ios.vendored_frameworks = 'Pixlytics_SDK.framework'
   
   s.frameworks = 'Pixlytics_SDK'
-  s.dependency 'Alamofire', '~> 4.8.2'
-  s.dependency 'ZIPFoundation', '~> 0.9.8'
+  s.dependency 'Alamofire', '~> 5.0.0-rc.2'
+  s.dependency 'ZIPFoundation', '~> 0.9.9'
 
 end
